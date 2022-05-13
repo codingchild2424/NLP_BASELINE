@@ -1,3 +1,4 @@
+#파일 읽어서 열어줌
 def read_text(fn):
     with open(fn, 'r') as f:
         lines = f.readlines()
@@ -8,7 +9,7 @@ def read_text(fn):
                 # The file should have tab delimited two columns.
                 # First column indicates label field,
                 # and second column indicates text field.
-                label, text = line.strip().split('\t')
+                label, text = line.strip().split('\t') #tsv 파일, 첫번째 column이 label, 두번째가 text
                 labels += [label]
                 texts += [text]
 
