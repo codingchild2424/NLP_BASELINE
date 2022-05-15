@@ -144,6 +144,7 @@ def main(config):
 
     trainer.train()
 
+    #모델 경로 설정
     model_path = './models/' + config.model_fn
 
     torch.save({
